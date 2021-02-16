@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Gotham Pro';
-    src: local('Gotham Pro')
-         url(../Axion/Fonts/GothamPro.woff) format(woff)
-         url(../Axion/Fonts/GothamPro.ttf) format(ttf)
-         url(../Axion/Fonts/GothamPro.eot) format(eot);
-} 
-
 .body {
     background: #E5E5E5;
     font-family : 'Gotham Pro';
