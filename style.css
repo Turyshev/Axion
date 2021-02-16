@@ -1,25 +1,63 @@
 .body {
     background: #E5E5E5;
     font-family : 'Gotham Pro';
-    font-weight: 700;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     background-color: #fff;
-    max-width: 1170px;
+    width: 1170px;
+    display: flex;
+}
+
+.header__logo {
+
+}
+.menu {
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.menu__link {
+
+}
+
+.signin {
+
+}
+
+.cart__link {
+
+}
+
+circle {
+    border-radius: 50%;
+}
+
+.cart__circle {
+    background-color: black;
+    width: 15px;
+    height: 15px;
 }
 
 .main {
     background-color: #fff;
-    max-width: 1170px;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hat {
     background-image: url(picture/rob-potter-422534-unsplash.png);
-    max-width: 1030px;
-    min-width: 931px;
-    max-height: 280px;
-    min-height: 253px;
+    width: 1030px;
+    height: 281px;
     color: #fff;
 }
 
@@ -28,8 +66,88 @@
     color: #fff;
 }
 
+.gallery {
+    width: 1030px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__box__one {
+    width: 1030px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gallery__hashteg {
+    width: 118px;
+    font-size: 18px;
+    opacity: 30%;
+    font-weight: 900;
+}
+
+.gallery__box__two {
+    width: 1030px;
+    display: flex;
+}
+
 .footer {
     background-color: black;
-    max-width: 1170px;
-    min-width: 1024px;
+    width: 770px;
+    height: 193px;
+    padding: 70px 200px 33px 200px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__box {
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__column__title {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.title_marginsix {
+    margin: 6px 0;
+}
+
+.footer__column__p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer__column__link {
+    font-size: 12px;
+}
+
+.signup {
+    width: 136px;
+    height: 29px;
+    border: 1.5px solid #fff;
+    text-align: center;
+}
+
+.footer__column__box {
+    width: 137px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__copyright {
+    font-size: 12px;
 }
