@@ -1,7 +1,13 @@
-.body {
+html {
     background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    width: 1170px;
+    background-color: #fff;
     font-family : 'Gotham Pro';
-    font-weight: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,19 +15,59 @@
 
 .header {
     background-color: #fff;
-    width: 1170px;
+    font-weight: 900;
+    font-size: 12px;
+    width: 1030px;
+    height: 116px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
 
 }
-.menu {
 
+.menu {
+    width: 334px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.form__box {
+    width: 178px;
+    height: 20px;
+    border-bottom: 1px solid #000;
+    display: flex;
+}
+
+.search {
+    width: 164px;
+    height: 14px;
+    border: none;
+}
+
+.lupa {
+    height: 16px;
+}
+
+.language {
+    width: 20px;
+    height: 14px;
+}
+
+.language__flag {
+    width: 20px;
+    height: 14px;
+}
+
 
 .link {
     text-decoration: none;
+}
+
+.link:visited {
+    color: currentColor;
 }
 
 .menu__link {
@@ -32,12 +78,28 @@
 
 }
 
+.cart__box {
+    width: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .cart__link {
 
 }
 
-circle {
+.circle {
     border-radius: 50%;
+}
+
+.circle__number {
+    margin: 0;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart__circle {
@@ -59,11 +121,38 @@ circle {
     width: 1030px;
     height: 281px;
     color: #fff;
+    font-weight: 900;
+}
+
+.product {
+    width: 1030px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .description {
+    width: 1030px;
+    height: 494px;
     background-color: black;
     color: #fff;
+}
+
+.stories {
+    width: 1030px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stories__box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .gallery {
@@ -117,7 +206,7 @@ circle {
 
 .footer__column__title {
     font-size: 12px;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .title_marginsix {
