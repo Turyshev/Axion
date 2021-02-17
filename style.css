@@ -6,6 +6,7 @@ html {
 
 .body {
     width: 1170px;
+    margin: 0 10px;
     background-color: #fff;
     font-family : 'Gotham Pro';
     display: flex;
@@ -15,30 +16,44 @@ html {
 
 .header {
     background-color: #fff;
-    font-weight: 900;
     font-size: 12px;
+    font-weight: 900;
     width: 1030px;
+    height: 116px;
+    display: grid;
+    grid-template-columns: 5.34% 4.37% 32.42% 18.54% 17.28% 3.4% 4.67% 3.4% 5.34% 1fr 1.94%;
+}
+
+.header__logo {
+    grid-column-start: 1;
+    height: 116px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    grid-column-start: 3;
+    width: 334px;
     height: 116px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__logo {
-
-}
-
-.menu {
-    width: 334px;
+.form__grid__box {
+    grid-column-start: 5;
+    height: 116px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .form__box {
     width: 178px;
-    height: 20px;
+    height: 28px;
     border-bottom: 1px solid #000;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .search {
@@ -48,12 +63,16 @@ html {
 }
 
 .lupa {
-    height: 16px;
+    height: 14px;
+    padding-top: 4px;
 }
 
 .language {
+    grid-column-start: 11;
     width: 20px;
-    height: 14px;
+    height: 116px;
+    display: flex;
+    align-items: center;
 }
 
 .language__flag {
@@ -75,11 +94,15 @@ html {
 }
 
 .signin {
-
+    grid-column-start: 7;
+    display: flex;
+    align-items: center;
 }
 
 .cart__box {
+    grid-column-start: 9;
     width: 55px;
+    height: 116px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +114,48 @@ html {
 
 .circle {
     border-radius: 50%;
+}
+
+.circle_small {
+    width: 7px;
+    height: 7px;
+}
+
+.circle_big {
+    width: 9px;
+    height: 9px;
+}
+
+.circle_grey {
+    background-color: #C4C4C4;
+}
+
+.circle_black {
+    background-color: #0E1211;
+}
+
+.circle_red {
+    background-color: #B62E3C;
+}
+
+.circle_yellow {
+    background-color: #FDB431;
+}
+
+.circle_shit {
+    background-color: #E29D69;
+}
+
+.circle_bordo {
+    background-color: #762E31;
+}
+
+.circle_blue {
+    background-color: #41479B;
+}
+
+.circle_lightblue {
+    background-color: #257DA9;
 }
 
 .circle__number {
@@ -124,16 +189,57 @@ html {
     font-weight: 900;
 }
 
+.hat__title {
+    font-weight: 900;
+}
+
 .product {
-    width: 1030px;
+    width: 1030px; 
+    height: 299px;
+    margin-top: 53px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.product__title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
 }
 
 .product__box {
+    width: 1030px;
     display: flex;
     justify-content: space-between;
+}
+
+.product__card {
+    width: 230px;
+    height: 261px;
+}
+
+.product__card__link {
+    font-size: 12px;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__card__price {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.circle__box {
+    width: 54px;
+    height: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .description {
@@ -164,7 +270,7 @@ html {
 .gallery__box__one {
     width: 1030px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
 }
 
 .gallery__hashteg {
@@ -175,16 +281,24 @@ html {
 }
 
 .gallery__box__two {
-    width: 1030px;
+    width: 1029px;
+    height: 147px;
     display: flex;
+    justify-content: left;
+}
+
+.gallery__photo {
+    width: 147px;
 }
 
 .footer {
     background-color: black;
-    width: 770px;
+    width: 775px;
     height: 193px;
-    padding: 70px 200px 33px 200px;
+    margin-top: 80px;
+    padding: 70px 195px 33px 200px;
     color: #fff;
+    font-weight: 100;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,13 +306,32 @@ html {
 }
 
 .footer__box {
-    width: 770px;
-    display: flex;
-    justify-content: space-between;
+    width: 775px;
+    display: grid;
+    grid-template-columns: 11.3% 14.5% 16.93% 8.8% 14.97% 10.84% 1fr;
+}
+
+.account {
+    height: 106px;
+    grid-column-start: 1; 
+}
+
+.service {
+    height: 124px;
+    grid-column-start: 3;
+}
+
+.miscellaneous {
+    height: 124px;
+    grid-column-start: 5;
+}
+
+.sign {
+    height: 124px;
+    grid-column-start: 7;
 }
 
 .footer__column {
-    height: 112px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -206,11 +339,12 @@ html {
 
 .footer__column__title {
     font-size: 12px;
-    margin: 0 0 10px 0;
+    font-weight: 600;
+    margin: 0 0 6px 0;
 }
 
 .title_marginsix {
-    margin: 6px 0;
+    margin: 0;
 }
 
 .footer__column__p {
@@ -223,15 +357,18 @@ html {
 }
 
 .signup {
-    width: 136px;
-    height: 29px;
-    border: 1.5px solid #fff;
+    width: 132px;
+    height: 19px;
+    margin-top: 6px;
+    padding-top: 6px;
+    border: 2px solid #fff;
+    font-size: 10px;
     text-align: center;
 }
 
 .footer__column__box {
     width: 137px;
-    margin-top: 12px;
+    margin-top: 28px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
