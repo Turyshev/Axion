@@ -14,6 +14,10 @@ html {
     align-items: center;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .header {
     background-color: #fff;
     font-size: 12px;
@@ -149,20 +153,23 @@ html {
     background-color: #257DA9;
 }
 
-.circle__number {
-    margin: 0;
-    font-size: 10px;
-    color: #fff;
+.cart__circle {
+    background-color: black;
+    width: 15px;
+    height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cart__circle {
-    background-color: black;
-    width: 15px;
-    height: 15px;
+.circle__number {
+    width: 5px;
+    height: 10px;
+    margin: 0;
+    font-size: 10px;
+    color: #fff;
 }
+
 
 .main {
     background-color: #fff;
@@ -192,11 +199,50 @@ html {
     grid-row-start: 2;
 }
 
-.hat__link__box {
+.hat__link {
+    width: 122px;
     height: 12px;
     font-size: 12px;
     grid-column-start: 2;
     grid-row-start: 4;
+    position: relative;
+}
+
+.arrow::before {
+    display: inline;
+    content: '';
+    height: 1px;
+    right: 1px;
+    top: 7px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.arrow::after {
+    display: inline;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-color: #fff;
+    transform: rotate(45deg);
+    right: 0;
+    top: 5px;
+}
+
+.arrow_long::before {
+    width: 40px;
+}
+
+.arrow_short::before {
+    width: 28px;
+    background-color: black;
+}
+
+.arrow_short::after {
+    border-color: black;
 }
 
 .product {
@@ -224,8 +270,22 @@ html {
 .product__card {
     width: 230px;
     height: 261px;
+    position: relative;
     display: grid;
     grid-template-rows: 66.7% 9.2% 9.2% 9.2% 1fr;
+}
+
+.dividing_line::after {
+    display: inline;
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -20px;
+    width: 0;
+    height: 100px;
+    margin: 0;
+    border: 1px solid #000;
+    opacity: 0.2;
 }
 
 .product__card__image {
@@ -280,17 +340,18 @@ html {
 .description__box {
     width: 311px;
     height: 494px;
-    display: flex;
     order: 2;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 31.38% 13.97% 21.26% 1fr;
 }
 
 .description__title {
     width: 266px;
     height: 55px;
+    margin: 0;
     font-size: 22px;
     font-weight: 900;
+    grid-row-start: 2;
 }
 
 .description__text {
@@ -298,16 +359,16 @@ html {
     height: 99px;
     font-size: 14px;
     font-weight: 100;
-}
-
-.link__box {
-    width: 266px;
-    height: 12px;
+    grid-row-start: 3;
 }
 
 .description__link {
+    width: 135px;
+    height: 12px;
     font-size: 12px;
     font-weight: 900;
+    grid-row-start: 4;
+    position: relative;
 }
 
 .video__box {
@@ -316,6 +377,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.description__video {
+    width: 644px;
+    height: 361px;
 }
 
 .stories {
@@ -344,27 +410,37 @@ html {
 
 .stories__card {
     width: 307px;
-    height: 338px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 340px;
+    display: grid;
+    grid-template-rows: 52% 9% 34.7% 1fr;
 }
 
 .stories__card__name {
+    margin: 0;
     font-size: 18px;
     font-weight: 900;
+    grid-row-start: 2;
 }
 
 .stories__card__text {
     font-size: 14px;
     font-weight: 100;
+    line-height: 1.25;
+    grid-row-start: 3;
 }
 
 .stories__card__bottom {
     font-size: 12px;
     font-weight: 900;
+    grid-row-start: 4;
     display: flex;
     justify-content: space-between;
+}
+
+.stories__card__link {
+    height: 12px;
+    width: 120px;
+    position: relative;
 }
 
 .stories__card__data {
