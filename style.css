@@ -62,7 +62,7 @@ html {
     border: none;
 }
 
-.lupa {
+.loupe {
     height: 14px;
     padding-top: 4px;
 }
@@ -80,17 +80,12 @@ html {
     height: 14px;
 }
 
-
 .link {
     text-decoration: none;
 }
 
 .link:visited {
     color: currentColor;
-}
-
-.menu__link {
-
 }
 
 .signin {
@@ -106,10 +101,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.cart__link {
-
 }
 
 .circle {
@@ -182,7 +173,7 @@ html {
 }
 
 .hat {
-    background-image: url(picture/rob-potter-422534-unsplash.png);
+    background-image: url(img/hat-background.png);
     width: 1030px;
     height: 281px;
     color: #fff;
