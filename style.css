@@ -938,6 +938,7 @@ html {
     .stories__card__link {
         width: 60%;
         font-size: 20px;
+        color: #fff;
     }
     
     .stories__card__data {
@@ -1266,6 +1267,7 @@ html {
     .stories__card__link {
         width: 50%;
         font-size: 12px;
+        color: #fff;
     }
     
     .stories__card__data {
@@ -1654,6 +1656,7 @@ html {
     .stories__card__link {
         width: 50%;
         font-size: 12px;
+        color: #fff;
     }
     
     .stories__card__data {
