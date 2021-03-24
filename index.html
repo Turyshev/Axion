@@ -9,15 +9,18 @@
 </head>
 <body class="body">
     <header class="header">
-        <a href="" class="header__logo">
+        <a href="#" class="header__logo">
             <img src="img/logo.png" alt="logo">
         </a>
+        <a href="#" class="header__logo__mobile">
+            <img src="img/logo-mobile.png" alt="logo" class="logo__img">
+        </a>
         <nav class="menu">
-            <a href="#" class="link menu__link uppercase">shop</a>
-            <a href="#" class="link menu__link uppercase">news</a>
-            <a href="#" class="link menu__link uppercase">team</a>
-            <a href="#" class="link menu__link uppercase">legacy</a>
-            <a href="#" class="link menu__link uppercase">help</a>
+            <a href="#" class="link menu__link">shop</a>
+            <a href="#" class="link menu__link">news</a>
+            <a href="#" class="link menu__link">team</a>
+            <a href="#" class="link menu__link">legacy</a>
+            <a href="#" class="link menu__link">help</a>
         </nav>
         <div class="form__grid__box">
             <div class="form__box">
@@ -27,9 +30,9 @@
                 <img src="img/loupe.svg" alt="loupe" class="loupe">
             </div>
         </div>
-        <div class="signin uppercase">sign in</div>
+        <div class="signin">sign in</div>
         <div class="cart__box">
-            <a href="#" class="link cart__link uppercase">cart</a>
+            <a href="#" class="link cart__link">cart</a>
             <div class="circle cart__circle">
                 <p class="circle__number">1</p>
             </div>
@@ -40,11 +43,11 @@
     </header>
     <main class="main">
         <section class="hat">
-            <h1 class="hat__title uppercase">legendary <br> footwear <br> reborn.</h1>
-            <a href="#" class="link hat__link arrow arrow_long uppercase">shop now</a>
+            <h1 class="hat__title">legendary <br> footwear <br> reborn.</h1>
+            <a href="#" class="link hat__link arrow arrow_long">shop now</a>
         </section>
         <section class="product">
-            <h2 class="product__title uppercase">featured product</h2>
+            <h2 class="product__title">featured product</h2>
             <div class="product__box">
                 <div class="product__card dividing_line">
                     <img src="img/product-img-1.png" alt="shoose" class="product__card__image">
@@ -59,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product__card dividing_line">
+                <div class="product__card dividing_line card_invisible_mobile">
                     <img src="img/product-img-2.png" alt="shoose" class="product__card__image">
                     <a href="#" class="link product__card__link">Camel/Chili Pepper Axion </a>
                     <div class="card__bottom">
@@ -72,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product__card dividing_line">
+                <div class="product__card dividing_line card_invisible card_invisible_mobile">
                     <img src="img/product-img-3.png" alt="shoose" class="product__card__image">
                     <a href="#" class="link product__card__link">Mandel Smoke/Rust Axion </a>
                     <div class="card__bottom">
@@ -85,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card card_invisible card_invisible_mobile">
                     <img src="img/product-img-4.png" alt="shoose" class="product__card__image">
                     <a href="#" class="link product__card__link">Cloud/Electric Blue Axion </a>
                     <div class="card__bottom">
@@ -102,7 +105,7 @@
         </section>
         <section class="description">
             <div class="description__box">
-                <h2 class="description__title uppercase uppercase">legendary <br> footwear reborn</h2>
+                <h2 class="description__title">legendary footwear reborn</h2>
                 <div class="description__text">
                     We are a brand with a history and are 
                     relaunching for 2019. We’ve been a 
@@ -110,14 +113,16 @@
                     it’s early teenage years. And now we 
                     presentate a new footwear collection.
                 </div>
-                <a href="#" class="link description__link arrow arrow_long uppercase">learn more</a>
+                <a href="#" class="link description__link arrow arrow_long">learn more</a>
             </div>
             <div class="video__box">
-                <video src="#" controls poster="img/video-poster.png" class="description__video"></video>
+                <video src="#" controls poster="img/video-poster.png" class="description__video">
+                    <source src="#" type="video/mp4">
+                </video>
             </div>
         </section>
         <section class="stories">
-            <h2 class="stories__title uppercase">recent stories</h2>
+            <h2 class="stories__title">recent stories</h2>
             <div class="stories__box">
                 <div class="stories__card">
                     <img src="img/stories-img-1.png" alt="photo" class="stories__card__photo">
@@ -131,11 +136,11 @@
                         makes Anagoa tick.
                     </div>
                     <div class="stories__card__bottom">
-                        <a href="#" class="link stories__card__link arrow arrow_short uppercase">learn more</a>
+                        <a href="#" class="link stories__card__link arrow arrow_short">learn more</a>
                         <p class="stories__card__data">17.08.2018</p>
                     </div>    
                 </div>
-                <div class="stories__card">
+                <div class="stories__card card_invisible_mobile">
                     <img src="img/stories-img-2.png" alt="photo" class="stories__card__photo">
                     <p class="stories__card__name">First Frontside flip</p>
                     <div class="stories__card__text">
@@ -147,11 +152,11 @@
                         Photo:Yoon Sul
                     </div>
                     <div class="stories__card__bottom">
-                        <a href="#" class="link stories__card__link arrow arrow_short uppercase">learn more</a>
+                        <a href="#" class="link stories__card__link arrow arrow_short">learn more</a>
                         <p class="stories__card__data">17.08.2018</p>
                     </div>
                 </div>
-                <div class="stories__card">
+                <div class="stories__card card_invisible card_invisible_mobile">
                     <img src="img/stories-img-3.png" alt="photo" class="stories__card__photo">
                     <p class="stories__card__name">Kevin Baekkel is Pro</p>
                     <div class="stories__card__text">
@@ -163,14 +168,14 @@
                         spot he hits on fire.
                     </div>
                     <div class="stories__card__bottom">
-                        <a href="#" class="link stories__card__link arrow arrow_short uppercase">learm more</a>
+                        <a href="#" class="link stories__card__link arrow arrow_short">learm more</a>
                         <p class="stories__card__data">29.07.2018</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="gallery">
-            <a href="https://www.google.com/search?q=%23axiomfootwear&newwindow=1&sxsrf=ALeKk02Rx6-bRFPA3WMokRdHSRwKkUBgiA:1613478329739&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPkcmVs-7uAhVIr4sKHcEJB8kQ_AUoA3oECAYQBQ&biw=1366&bih=690" class="link gallery__hashteg">#AXIONFOOTWEAR</a>
+            <a href="#" class="link gallery__hashteg">#AXIONFOOTWEAR</a>
             <div class="gallery__box">
                 <img src="img/gallery-img-1.png" alt="photo" class="gallery__photo">
                 <img src="img/gallery-img-2.png" alt="photo" class="gallery__photo">
@@ -178,14 +183,15 @@
                 <img src="img/gallery-img-4.png" alt="photo" class="gallery__photo">
                 <img src="img/gallery-img-5.png" alt="photo" class="gallery__photo">
                 <img src="img/gallery-img-6.png" alt="photo" class="gallery__photo">
-                <img src="img/gallery-img-7.png" alt="photo" class="gallery__photo">
+                <img src="img/gallery-img-7.png" alt="photo" class="gallery__photo photo_mobile_invisible">
+                <img src="img/gallery-img-1.png" alt="photo" class="gallery__photo photo_mobile">
             </div>    
         </section>
     </main>
     <footer class="footer">
         <div class="footer__box">
             <div class="footer__column account">
-                <p class="footer__column__title uppercase">my account</p>
+                <p class="footer__column__title">my account</p>
                 <a href="#" class="link footer__column__link">Login</a>
                 <a href="#" class="link footer__column__link">Wish List</a>
                 <a href="#" class="link footer__column__link">Order history</a>
@@ -193,7 +199,7 @@
                 <a href="#" class="link footer__column__link">Gift cards</a>
             </div>
             <div class="footer__column service">
-                <p class="footer__column__title uppercase">custom service</p>
+                <p class="footer__column__title">custom service</p>
                 <a href="#" class="link footer__column__link">Contact us</a>
                 <a href="#" class="link footer__column__link">Help/FAQ</a>
                 <a href="#" class="link footer__column__link">Shipping</a>
@@ -202,7 +208,7 @@
                 <a href="#" class="link footer__column__link">Holiday shopping</a>
             </div>
             <div class="footer__column miscellaneous">
-                <p class="footer__column__title uppercase">miscellaneous</p>
+                <p class="footer__column__title">miscellaneous</p>
                 <a href="#" class="link footer__column__link">About Us</a>
                 <a href="#" class="link footer__column__link">Careers</a>
                 <a href="#" class="link footer__column__link">Privacy Policy</a>
@@ -211,21 +217,21 @@
                 <a href="#" class="link footer__column__link">Homepage US/UK</a>
             </div>
             <div class="footer__column sign">
-                <p class="footer__column__title title_marginsix uppercase">newsletter sign up</p>
+                <p class="footer__column__title title_marginsix">newsletter sign up</p>
                 <p class="footer__column__p">Get 10% Off Your Next Order!</p>
-                <a href="#" class="link footer__column__link signup uppercase">sign up</a>
+                <a href="#" class="link footer__column__link signup">sign up</a>
                 <div class="footer__column__box">
                     <a href="#" class="footer__column__link">
-                        <img src="img/facebook-logo.svg" alt="Facebook">
+                        <img src="img/facebook-logo.svg" alt="Facebook" class="footer__link__img">
                     </a>
                     <a href="#" class="footer__column__link">
-                        <img src="img/twitter-logo.svg" alt="Twitter">
+                        <img src="img/twitter-logo.svg" alt="Twitter" class="footer__link__img">
                     </a>
                     <a href="#" class="footer__column__link">
-                        <img src="img/instagram-logo.svg" alt="Instagram">
+                        <img src="img/instagram-logo.svg" alt="Instagram" class="footer__link__img">
                     </a>
                     <a href="#" class="footer__column__link">
-                        <img src="img/pinterest-logo.svg" alt="Pinterest">
+                        <img src="img/pinterest-logo.svg" alt="Pinterest" class="footer__link__img">
                     </a>
                 </div>
             </div>
