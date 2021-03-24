@@ -1000,7 +1000,7 @@ html {
 
 @media screen and (min-width: 321px) and (max-width: 720px) {
     .body {
-        width: 375px;
+        width: 100%;
     }
     
     .header {
@@ -1389,7 +1389,7 @@ html {
 
 @media screen and (min-width: 0) and (max-width: 320px) {
     .body {
-        width: 320px;
+        width: 100%;
     }
     
     .header {
